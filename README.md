@@ -2,8 +2,6 @@
 
 Welcome to the repository for my personal engineering portfolio! I built this cinematic, modern website from scratch to showcase my journey as a Computer Science Engineering Student at JNTUH (TKR College of Engineering and Technology).
 
-I drew heavy inspiration from the minimalism, typography, spacing, and product storytelling of Apple, Vercel, Linear, and Stripe to create a premium web experience.
-
 🌍 **Live Deployment:** [luke-abraham-sam-portfolio.onrender.com](https://luke-abraham-sam-portfolio.onrender.com)
 
 ## 🚀 Tech Stack
