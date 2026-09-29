@@ -1,36 +1,135 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Luke Abraham Sam — Personal Engineering Portfolio Website
 
-## Getting Started
+A premium, modern, cinematic technology portfolio built from scratch for **Luke Abraham Sam**, Computer Science Engineering Student at JNTUH (TKR College of Engineering and Technology).
 
-First, run the development server:
+Designed with inspiration from the minimalism, typography, spacing, and product storytelling of Apple, Vercel, Linear, and Stripe.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+---
+
+## 🌟 Core Highlights & Architecture
+
+- **Minimalist Dark Aesthetic**: Deep blacks (`#000000`), subtle glassmorphism, precise typography (Geist Sans & Mono), and ambient glow highlights.
+- **Cinematic Interactions**: Mouse-reactive cursor glow, Framer Motion entrance & scroll transitions, magnetic CTA buttons, and interactive modal drawers.
+- **Data-Driven Architecture**: All portfolio content (Profile, Projects, Skills, Certifications, Education, Currently Building, Socials) is separated into structured TypeScript files under `/src/data/`.
+- **Zero Fake Data Policy**: 100% truthful, factual representation of experience, education, certifications, and project links.
+- **Agronex AI Excluded**: Strictly personal projects showcased only.
+
+---
+
+## 🚀 Tech Stack
+
+- **Framework**: [Next.js](https://nextjs.org/) (App Router, Turbopack)
+- **Language**: [TypeScript](https://www.typescriptlang.org/)
+- **Styling**: [Tailwind CSS v4](https://tailwindcss.com/)
+- **Animations**: [Framer Motion](https://www.framer.com/motion/)
+- **Icons**: [Lucide React](https://lucide.dev/) & Custom SVG Brand Icons
+- **Deployment Target**: [Vercel](https://vercel.com/) / [Render](https://render.com/)
+
+---
+
+## 📁 Project Structure
+
+```
+luke-abraham-sam-portfolio/
+├── public/
+│   └── images/
+│       └── profile/
+│           ├── luke-abraham-sam.jpg    <-- Drop your official photograph here
+│           └── README.md
+├── src/
+│   ├── app/
+│   │   ├── globals.css                <-- Custom scrollbar & theme CSS
+│   │   ├── layout.tsx                 <-- Root metadata, SEO & OpenGraph
+│   │   └── page.tsx                   <-- Main portfolio sitemap
+│   ├── components/
+│   │   ├── Navbar.tsx                 <-- Sticky glass bar & mobile drawer
+│   │   ├── Hero.tsx                   <-- Name, position, photo & CTAs
+│   │   ├── ProfileImage.tsx           <-- Smart portrait loader with fallback
+│   │   ├── AboutSection.tsx           <-- Editorial narrative & quick profile
+│   │   ├── SkillsSection.tsx          <-- Categorized skill matrix (no fake %)
+│   │   ├── CurrentlyBuilding.tsx      <-- In-progress projects & AWS certification
+│   │   ├── ProjectsSection.tsx        <-- CarePulse & Secure File Storage
+│   │   ├── ProjectDetailModal.tsx     <-- Case-study modal drawer
+│   │   ├── CertificationsSection.tsx  <-- ServiceNow, Salesforce, NPTEL, AWS
+│   │   ├── EducationSection.tsx       <-- JNTUH, Sri Chaitanya, HPS journey
+│   │   ├── ProblemSolvingSection.tsx  <-- LeetCode profile showcase
+│   │   ├── GitHubSection.tsx          <-- Open-source & repository links
+│   │   ├── ProfessionalPresenceSection.tsx <-- LinkedIn spotlight
+│   │   ├── ContactSection.tsx         <-- Mailto/Tel actions & message form
+│   │   ├── Footer.tsx                 <-- Minimalist footer & copyright
+│   │   └── Icons.tsx                  <-- Custom SVG brand icons
+│   ├── data/                          <-- 💡 EDITABLE DATA FILES
+│   │   ├── profile.ts                 <-- Name, contact, location, CGPA
+│   │   ├── socials.ts                 <-- LinkedIn, GitHub, LeetCode, Email
+│   │   ├── skills.ts                  <-- Programming, Web, AI, CS skills
+│   │   ├── currentlyBuilding.ts       <-- Active ongoing projects & certs
+│   │   ├── projects.ts                <-- CarePulse & Secure File Storage
+│   │   ├── certifications.ts          <-- ServiceNow, Salesforce, NPTEL, AWS
+│   │   └── education.ts               <-- JNTUH, Intermediate, Class X
+│   └── lib/
+│       └── utils.ts                   <-- Tailwind helper functions
+├── package.json
+├── next.config.ts
+└── README.md
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## ⚙️ How to Update Portfolio Content
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+To update your projects, certifications, skills, or links in the future without touching component UI code:
 
-## Learn More
+1. **Profile & Contact Info**: Edit [`/src/data/profile.ts`](file:///C:/Users/Luke%20Abraham/.gemini/antigravity/scratch/luke-abraham-sam-portfolio/src/data/profile.ts) and [`/src/data/socials.ts`](file:///C:/Users/Luke%20Abraham/.gemini/antigravity/scratch/luke-abraham-sam-portfolio/src/data/socials.ts).
+2. **Projects**: Edit [`/src/data/projects.ts`](file:///C:/Users/Luke%20Abraham/.gemini/antigravity/scratch/luke-abraham-sam-portfolio/src/data/projects.ts). Add new project objects with title, description, features, tech stack, and URLs.
+3. **Certifications**: Edit [`/src/data/certifications.ts`](file:///C:/Users/Luke%20Abraham/.gemini/antigravity/scratch/luke-abraham-sam-portfolio/src/data/certifications.ts). Set `status: "COMPLETED"` or `"IN PROGRESS"`.
+4. **Skills**: Edit [`/src/data/skills.ts`](file:///C:/Users/Luke%20Abraham/.gemini/antigravity/scratch/luke-abraham-sam-portfolio/src/data/skills.ts). Add new skills to relevant categories.
+5. **Education**: Edit [`/src/data/education.ts`](file:///C:/Users/Luke%20Abraham/.gemini/antigravity/scratch/luke-abraham-sam-portfolio/src/data/education.ts).
+6. **Profile Photograph**: Drop your picture file at `public/images/profile/luke-abraham-sam.jpg`.
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 🛠️ Local Development & Running
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+1. **Clone the repository**:
+   ```bash
+   git clone https://github.com/Luke-Abraham-Sam/luke-abraham-sam-portfolio.git
+   cd luke-abraham-sam-portfolio
+   ```
 
-## Deploy on Vercel
+2. **Install dependencies**:
+   ```bash
+   npm install
+   ```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+3. **Start local development server**:
+   ```bash
+   npm run dev
+   ```
+   Open `http://localhost:3000` in your browser.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+4. **Test production build**:
+   ```bash
+   npm run build
+   npm run start
+   ```
+
+---
+
+## 🚀 Deployment to Vercel
+
+1. Push your code to GitHub:
+   ```bash
+   git init
+   git add .
+   git commit -m "Initial commit: Luke Abraham Sam Portfolio"
+   git remote add origin https://github.com/Luke-Abraham-Sam/luke-abraham-sam-portfolio.git
+   git push -u origin main
+   ```
+2. Import repository into [Vercel](https://vercel.com/new).
+3. Vercel automatically detects Next.js. Click **Deploy**.
+
+---
+
+## 📄 License & Copyright
+
+© 2026 **Luke Abraham Sam**. All rights reserved.
