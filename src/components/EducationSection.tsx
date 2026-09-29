@@ -2,7 +2,7 @@
 
 import React from "react";
 import { motion } from "framer-motion";
-import { GraduationCap, BookOpen, Award, MapPin, Calendar, CheckCircle2, ChevronRight } from "lucide-react";
+import { GraduationCap, MapPin, ChevronRight } from "lucide-react";
 import { educationData } from "@/data/education";
 
 export const EducationSection: React.FC = () => {
@@ -22,7 +22,7 @@ export const EducationSection: React.FC = () => {
             </h2>
           </div>
           <p className="text-sm font-mono text-neutral-400 max-w-sm">
-            Continuous educational progression from secondary school excellence to B.Tech Computer Science Engineering.
+            Continuous educational progression from secondary school to B.Tech Computer Science Engineering.
           </p>
         </div>
 
@@ -83,34 +83,14 @@ export const EducationSection: React.FC = () => {
                   </div>
                 </div>
 
-                {/* Score Pill & Highlights */}
-                <div className="grid grid-cols-1 md:grid-cols-12 gap-6 items-center pt-2">
-                  
-                  {/* Score */}
-                  <div className="md:col-span-4 p-4 rounded-2xl bg-neutral-900 border border-white/10 flex flex-col justify-center space-y-1">
-                    <span className="text-[10px] font-mono text-neutral-500 uppercase tracking-wider">
-                      {edu.scoreLabel}
-                    </span>
-                    <div className="text-2xl font-bold font-mono text-blue-400">
-                      {edu.scoreValue}
+                {/* Highlights List */}
+                <div className="space-y-2 pt-2 border-t border-white/5">
+                  {edu.highlights.map((h, i) => (
+                    <div key={i} className="flex items-start gap-2.5 text-xs text-neutral-300 leading-relaxed font-sans">
+                      <ChevronRight className="w-4 h-4 text-blue-400 shrink-0 mt-0.5" />
+                      <span>{h}</span>
                     </div>
-                    {edu.scoreStatus && (
-                      <span className="text-[10px] font-mono text-neutral-400">
-                        {edu.scoreStatus}
-                      </span>
-                    )}
-                  </div>
-
-                  {/* Highlights */}
-                  <div className="md:col-span-8 space-y-2">
-                    {edu.highlights.map((h, i) => (
-                      <div key={i} className="flex items-start gap-2.5 text-xs text-neutral-300 leading-relaxed font-sans">
-                        <ChevronRight className="w-4 h-4 text-blue-400 shrink-0 mt-0.5" />
-                        <span>{h}</span>
-                      </div>
-                    ))}
-                  </div>
-
+                  ))}
                 </div>
 
               </div>

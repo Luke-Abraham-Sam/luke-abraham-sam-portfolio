@@ -167,7 +167,7 @@ export const Hero: React.FC = () => {
                   <span className="text-neutral-300">JNTUH CSE '27</span>
                 </div>
                 <span className="px-2 py-0.5 rounded bg-blue-500/20 border border-blue-500/30 text-blue-300 text-[10px]">
-                  CGPA {profileData.cgpa}
+                  Class of 2027
                 </span>
               </div>
             </div>

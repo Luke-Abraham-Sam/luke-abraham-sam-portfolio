@@ -121,11 +121,6 @@ export const AboutSection: React.FC = () => {
                   <span className="text-neutral-200 text-right">{profileData.graduationYear}</span>
                 </div>
 
-                <div className="flex justify-between items-baseline border-b border-white/5 pb-2">
-                  <span className="text-neutral-500 uppercase">CGPA</span>
-                  <span className="text-blue-400 font-bold text-right">{profileData.cgpa} ({profileData.cgpaStatus})</span>
-                </div>
-
                 <div className="flex justify-between items-baseline">
                   <span className="text-neutral-500 uppercase">CONTACT</span>
                   <span className="text-neutral-200 text-right">{profileData.email}</span>

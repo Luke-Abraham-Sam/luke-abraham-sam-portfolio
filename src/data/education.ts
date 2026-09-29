@@ -8,9 +8,6 @@ export interface EducationItem {
   field?: string;
   boardOrStream?: string;
   location: string;
-  scoreLabel: string;
-  scoreValue: string;
-  scoreStatus?: string;
   highlights: string[];
   isCurrent?: boolean;
 }
@@ -25,9 +22,6 @@ export const educationData: EducationItem[] = [
     degree: "Bachelor of Technology (B.Tech)",
     field: "Computer Science and Engineering",
     location: "Hyderabad, Telangana, India",
-    scoreLabel: "CGPA",
-    scoreValue: "7.44 / 10",
-    scoreStatus: "Through 6th Semester",
     highlights: [
       "Final-year CSE student specializing in software engineering, cloud systems, and AI",
       "Rigorous coursework in Data Structures, Algorithms, DBMS, Operating Systems, Networks, and OOP",
@@ -44,8 +38,6 @@ export const educationData: EducationItem[] = [
     degree: "Intermediate Education (10+2)",
     boardOrStream: "MPC (Mathematics, Physics, Chemistry)",
     location: "Hyderabad, Telangana, India",
-    scoreLabel: "Percentage",
-    scoreValue: "80.8%",
     highlights: [
       "Completed Senior Secondary education with focus on advanced Mathematics, Physics, and Chemistry",
       "Developed strong analytical mindset and problem-solving fundamentals"
@@ -60,11 +52,9 @@ export const educationData: EducationItem[] = [
     degree: "Secondary School Education (Class X)",
     boardOrStream: "CBSE Board",
     location: "Hyderabad, Telangana, India",
-    scoreLabel: "Percentage",
-    scoreValue: "90.6%",
     highlights: [
       "Completed a foundational 10-year education at one of Hyderabad's premier institutions",
-      "Achieved distinction grade of 90.6% in CBSE Class X board examinations",
+      "Completed CBSE Class X board examinations with distinction",
       "Participated actively in school leadership, sports, and team activities"
     ],
   },
